@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["id", "name", "username", "email", "address"],
+  "properties": {
+    "id": { "type": "integer" },
+    "name": { "type": "string" },
+    "username": { "type": "string" },
+    "email": { "type": "string" },
+    "address": {
+      "type": "object",
+      "required": ["city", "zipcode"],
+      "properties": {
+        "city": { "type": "string" },
+        "zipcode": { "type": "string" }
+      }
+    }
+  }
+}
